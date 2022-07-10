@@ -1,3 +1,15 @@
+/*
+ * main.cpp
+ * Written in 2022 by Na Jongwoo <njw1204@naver.com>
+ *
+ * To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights
+ * to this software to the public domain worldwide. This software is distributed without any warranty.
+ * You should have received a copy of the CC0 Public Domain Dedication along with this software.
+ * If not, see <http://creativecommons.org/publicdomain/zero/1.0/>
+ *
+ * Please visit: https://github.com/njw1204/problem-solving-template
+ */
+
 #if defined(__GNUC__)&&!defined(__llvm__)
 #pragma GCC target("avx2")
 #pragma GCC optimize("O3,unroll-loops")
