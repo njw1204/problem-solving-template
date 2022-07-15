@@ -16,6 +16,7 @@ typedef unsigned long long ull;
 typedef pair<int, int> pi;
 typedef pair<ll, ll> pl;
 typedef pair<ull, ull> pul;
+#define __CC(a,b) a##b
 #define $1 first
 #define $2 second
 #define endl '\n'
@@ -28,7 +29,7 @@ typedef pair<ull, ull> pul;
 #define FILL(c,x) for(auto &__FILL:(c))__FILL=(x)
 #define ALL(c) (c).begin(),(c).end()
 #define UNSYNC ios_base::sync_with_stdio(false);cin.tie(nullptr)
-#define READTXT for(ifstream __READTXT(STDIN);__READTXT&&__READTXT.get()!=-1&&freopen(STDIN,"r",stdin);)__READTXT.close()
+#define READTXT for(ifstream __READTXT(STDIN);__READTXT&&__READTXT.get()!=-1&&__CC(freo,pen)(STDIN,"r",stdin);)__READTXT.close()
 #define STDIN "input.txt" // Change a input file path
 template<typename T> const T& MIN(const T& arg) { return arg; } template<typename T, typename... Ts> const auto& MIN(const T& arg, const Ts&... args) { const auto& m = MIN(args...); return !(m < arg) ? arg : m; }
 template<typename T> const T& MAX(const T& arg) { return arg; } template<typename T, typename... Ts> const auto& MAX(const T& arg, const Ts&... args) { const auto& m = MAX(args...); return (arg < m) ? m : arg; }
