@@ -35,7 +35,7 @@ template<typename T> const T& MAX(const T& arg) { return arg; } template<typenam
 template<typename T> void INPUT(T& arg) { cin >> arg; } template<typename T, typename... Ts> void INPUT(T& arg, Ts&... args) { cin >> arg; INPUT(args...); }
 template<typename T> void PRINT(const T& arg) { cout << arg << '\n'; } template<typename T, typename... Ts> void PRINT(const T& arg, const Ts&... args) { cout << arg << ' '; PRINT(args...); }
 ull GCD(ull a, ull b) { while (b != 0) { ull t = a % b; a = b; b = t; } return a; }
-ull LCM(ull a, ull b) { return a * b ? a * b / GCD(a, b) : 0; }
+ull LCM(ull a, ull b) { return a * b > 0 ? a * b / GCD(a, b) : 0; }
 ull POW(ull a, ull b, ull m = ULLONG_MAX) { ull r = 1; while (b) { if (b & 1) r = r * a % m; b >>= 1; a = a * a % m; } return r; }
 
 int main() {
