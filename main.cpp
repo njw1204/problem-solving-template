@@ -6,7 +6,8 @@
  */
 
 #if defined(__GNUC__)&&!defined(__llvm__)
-#pragma GCC optimize("O3,unroll-loops")
+//#pragma GCC optimize("O3,unroll-loops")
+//#pragma GCC target("avx2")
 #endif
 #include <bits/stdc++.h>
 using namespace std;
@@ -28,7 +29,11 @@ typedef pair<ull, ull> pul;
 #define FILL(c,x) for(auto &__FILL:(c))__FILL=(x)
 #define ALL(c) (c).begin(),(c).end()
 #define UNSYNC ios_base::sync_with_stdio(false);cin.tie(nullptr)
-#define READTXT for(ifstream __READTXT(STDIN);__READTXT&&__READTXT.get()!=-1&&__CC(freo,pen)(STDIN,"r",stdin);)__READTXT.close()
+#ifndef ONLINE_JUDGE
+#define READTXT for(__CC(ifst,ream) __READTXT(STDIN);__READTXT&&__READTXT.get()!=-1&&__CC(freo,pen)(STDIN,"r",stdin);)__READTXT.close()
+#else
+#define READTXT
+#endif
 #define STDIN "input.txt" // Change a input file path
 template<typename T> const T& MIN(const T& arg) { return arg; } template<typename T, typename... Ts> const T& MIN(const T& arg, const Ts&... args) { return min(arg, MIN(args...)); }
 template<typename T> const T& MAX(const T& arg) { return arg; } template<typename T, typename... Ts> const T& MAX(const T& arg, const Ts&... args) { return max(arg, MAX(args...)); }
