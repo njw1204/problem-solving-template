@@ -15,7 +15,8 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pi;
 typedef pair<ll, ll> pl;
-typedef pair<ull, ull> pul;
+typedef pair<pi, pi> ppi;
+typedef pair<pl, pl> ppl;
 #define __CC(a,b) a##b
 #define $1 first
 #define $2 second
