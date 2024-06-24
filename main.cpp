@@ -1,10 +1,3 @@
-/*
- * A problem solving template
- * Written in 2022 by Na Jongwoo <njw1204@naver.com>
- *
- * Please visit: https://github.com/njw1204/problem-solving-template
- */
-
 #if defined(__GNUC__)&&!defined(__llvm__)
 //#pragma GCC optimize("O3,unroll-loops")
 //#pragma GCC target("avx2")
